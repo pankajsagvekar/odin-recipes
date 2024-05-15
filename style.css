@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merienda", cursive;
+
+    --orange: #ffbf69;
+    --white: #ffffff;
+    --green: #2ec4b6
+}
+
+/* .img-container {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: brightness(70%);
+
+    z-index: 1;
+} */
+
+body{
+    background-image: url(img/pattern.jpg);
+    background-repeat: repeat;
+}
+
+header {
+    text-align: center;
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 1rem;
+    margin-bottom: .5rem;
+
+    position: relative;
+    z-index: 3;
+}
+
+h2{
+    text-align: center;
+    background-color: white;
+    padding: 1rem;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li img {
+    float: left;
+    margin: 1rem;
+
+    display: flex;
+    width: 10rem;
+}
+
+li {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--orange);
+    margin: 1rem;
+}
+
+li:hover {
+    background: #eee;
+    cursor: pointer;
+}
